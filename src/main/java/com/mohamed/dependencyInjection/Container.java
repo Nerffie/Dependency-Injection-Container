@@ -34,7 +34,7 @@ public class Container {
     }
 
     public <T> T getInstance(Class<T> className,Class<?>... previousClassNames) throws Exception {
-        System.out.println("GETTING INSTANCE OF " + className.toString());
+        //System.out.println("GETTING INSTANCE OF " + className.toString());
         if (!dependencies.containsKey(className))
             throw new Exception("This dependency doesn't exist. The container can't inject it because it hasn't been registered.");
 
